@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <i><title>Guessing game</title></i>
+    <link rel="stylesheet" href="guess.css">
+    <meta charset="UTF-8">
+</head>
+<body >
+  <div class="app">
+    <div class="titlebox">
+       <div id="name">
+       <h1><i>Guessing game</i></h1>
+       </div>
+    <br>
+      <h2 id="rules">
+        YOU WILL BE GIVEN A RANGE,TRY AND GUESS THE NUMBER I AM THINKING OF.
+        IF YOU GET IT RIGHT , YOU GET 1 POINT, IF YOU GET IT WRONG, YOU LOSE 1 POINT.<sub>GOOD LUCK!</sub>
+       </h2>
+    </div>
+<div class="stats">
+  <div class="stat">
+          <p>Score</p><br>
+          <span id="totalscore">0</span>
+        </div>
+        <div class="stat">
+          <p>number of guesses</p><br>
+          <span id="guessCount">0</span>
+        </div>
+        <div class="stat">
+          <p>Guesses left</p><br>
+          <span id="remainingguesses">0</span>
+        </div>
+        </div>
+      <form id="guessForm" class="make-guess">
+      <input type="number" id="userGuess" placeholder="Enter your guess here..." />
+      <button type="submit"><i>Enter a digit</i></button>
+    </form>
+    <button type="button" id="resetButton"><i>Reset Game</i></button>
+</div>
+</body>
+<script type="module" src="guess.js" defer></script>
+</html>
